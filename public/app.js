@@ -74,7 +74,7 @@ function makeMove(cell){
        cell.innerHTML = currentPlayer;
        checkWinner();
        currentPlayer = currentPlayer == 'X'?'O':'X';
-       document.querySelection('.result').textContent = Player${currentPlayer}sturn;
+       document.querySelection('.result').textContent = `Player${currentPlayer}sturn`;
     }
 }
 
@@ -85,6 +85,9 @@ function checkWinner(){
 function resetGame(){
     const cells = document.querySelectorAll('.cell');
     cells.forEach(cell => {
-        cell
-    })
+        cell.innerHTML  ="";
+    });
+    currentPlayer='X';
+    gameOver=false;
+    document.querySelectorAll('.result').textContent= `Player${currentPlayer}sturn`;
 }
