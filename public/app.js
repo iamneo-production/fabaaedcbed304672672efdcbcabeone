@@ -1,4 +1,5 @@
 // Initial game state
+
 let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let result = document.querySelector('.result');
@@ -27,16 +28,18 @@ const ticTacToe = (element, index) => {
     */
 
 const { Touchscreen } = require("puppeteer");
+function checkWinner(){
+        const cells=document.querySelectorAll('.cell');
+        }
+}
 
-    // Your code to update the game state and check for a win
-    // ...
 
     // Your code to display the current player's turn
     // ...
 
     // Your code to handle button and cell interactions
     // ...
-}
+
 
     /*
     **Part 2: Reset Function (Add your code here)**
@@ -65,7 +68,6 @@ btns.forEach((btn, i) => {
 document.querySelector('#reset').addEventListener('click', resetGame);
 
 
-let currentPlayer='X';
 let gameOver = false;
 
 function makeMove(cell){
@@ -77,8 +79,6 @@ function makeMove(cell){
     }
 }
 
-function checkWinner(){
-    const cells=document.querySelectorAll('.cell');
-}
+
 
 
