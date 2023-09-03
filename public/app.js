@@ -26,6 +26,8 @@ const ticTacToe = (element, index) => {
     3. Disable all buttons after a win.
     */
 
+const { Touchscreen } = require("puppeteer");
+
     // Your code to update the game state and check for a win
     // ...
 
@@ -72,6 +74,8 @@ function makeMove(cell){
        cell.innerHTML = currentPlayer;
        checkWinner();
        currentPlayer = currentPlayer == 'X'?'O':'X';
-       document.querySelection('.result')
+       document.querySelection('.result').textContent = Player${currentPlayer}sturn;
     }
 }
+
+function
