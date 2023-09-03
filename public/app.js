@@ -1,4 +1,4 @@
-// Initial game state
+/* // Initial game state
 let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let result = document.querySelector('.result');
@@ -34,7 +34,7 @@ const ticTacToe = (element, index) => {
 
     // Your code to handle button and cell interactions
     // ...
-};
+//}
 
     /*
     **Part 2: Reset Function (Add your code here)**
@@ -46,7 +46,7 @@ const ticTacToe = (element, index) => {
     */
 
 // Function to reset the game
-const resetGame = () => {
+// const resetGame = () => {
     // Your code to reset the game state
     // ...
 
@@ -55,10 +55,11 @@ const resetGame = () => {
 
     // Your code to re-enable buttons
     // ...
-};
+//};
 
-btns.forEach((btn, i) => {
+/*btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 
 document.querySelector('#reset').addEventListener('click', resetGame);
+*/
