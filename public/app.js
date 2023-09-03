@@ -63,3 +63,10 @@ const ticTacToe = (element, index) => {
 
 document.querySelector('#reset').addEventListener('click', resetGame);
 */
+
+let currentPlayer='X';
+let gameOver = false;
+
+function makeMove(cell){
+    if(cell.innerHTNL)
+}
