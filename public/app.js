@@ -1,4 +1,4 @@
-/* // Initial game state
+// Initial game state
 let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let result = document.querySelector('.result');
@@ -36,7 +36,7 @@ const { Touchscreen } = require("puppeteer");
 
     // Your code to handle button and cell interactions
     // ...
-//}
+}
 
     /*
     **Part 2: Reset Function (Add your code here)**
@@ -48,23 +48,22 @@ const { Touchscreen } = require("puppeteer");
     */
 
 // Function to reset the game
-// const resetGame = () => {
-    // Your code to reset the game state
-    // ...
+const resetGame = () => {
+        const cells = document.querySelectorAll('.cell');
+            cells.forEach(cell => {
+                    cell.innerHTML  ="";
+                        });
+                            currentPlayer='X';
+                                gameOver=false;
+                                    document.querySelectorAll('.result').textContent= `Player${currentPlayer}sturn`;
+};
 
-    // Your code to update the 'result' element
-    // ...
-
-    // Your code to re-enable buttons
-    // ...
-//};
-
-/*btns.forEach((btn, i) => {
+btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 
 document.querySelector('#reset').addEventListener('click', resetGame);
-*/
+
 
 let currentPlayer='X';
 let gameOver = false;
@@ -82,12 +81,4 @@ function checkWinner(){
     const cells=document.querySelectorAll('.cell');
 }
 
-function resetGame(){
-    const cells = document.querySelectorAll('.cell');
-    cells.forEach(cell => {
-        cell.innerHTML  ="";
-    });
-    currentPlayer='X';
-    gameOver=false;
-    document.querySelectorAll('.result').textContent= `Player${currentPlayer}sturn`;
-}
+
