@@ -78,4 +78,13 @@ function makeMove(cell){
     }
 }
 
-function
+function checkWinner(){
+    const cells=document.querySelectorAll('.cell');
+}
+
+function resetGame(){
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+        cell
+    })
+}
